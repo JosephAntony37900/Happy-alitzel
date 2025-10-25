@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Momentos 💝 - Alitzel</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <!-- Reproductor de música -->
+    <div class="music-player">
+        <div class="player-content">
+            <div class="song-info">
+                <span class="song-icon">🎵</span>
+                <span class="song-name" id="songName">Cargando...</span>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn" id="prevBtn" title="Anterior">⏮</button>
+                <button class="control-btn play-btn" id="playBtn" title="Play/Pausa">▶️</button>
+                <button class="control-btn" id="nextBtn" title="Siguiente">⏭</button>
+                <button class="control-btn mute-btn" id="muteBtn" title="Silenciar">🔊</button>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="gallery-header">
+            <h1>💝 Nuestros Momentos 💝</h1>
+            <p class="subtitle">Cada foto cuenta una historia especial</p>
+            <a href="index.html" class="back-btn">← Volver al inicio</a>
+        </div>
+
+        <!-- Galería de fotos -->
+        <div class="gallery-grid" id="galleryGrid">
+        </div>
+    </div>
+
+    <audio id="audioPlayer" loop></audio>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>
